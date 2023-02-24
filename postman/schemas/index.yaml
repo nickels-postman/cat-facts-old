@@ -7,7 +7,6 @@ info:
   contact:
     email: admin@admin.com
     url: https://catfact.ninja
-    name: NOONE
   license:
     name: commons
     url: https://catfact.ninja
@@ -19,6 +18,7 @@ servers:
 paths:
   /breeds:
     get:
+      summary: Returns a list of breeds
       tags:
         - Breeds
       description: Returns a list of breeds
