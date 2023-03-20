@@ -9,6 +9,26 @@
 	"item": [
 		{
 			"name": "get Breeds",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dbd94d5d-b8bd-48d0-af51-36c54c2e1fb2",
+						"exec": [
+							"let jsonData = pm.response.json();",
+							"//pm.collectionVariables.set(\"breed-pages\", jsonData.total);",
+							"",
+							"pm.test(\"More than 10 pages of cat facts\", function () {",
+							"    pm.expect(jsonData.total).to.be.greaterThan(100);",
+							"});",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "572c2030-2173-4215-aadc-3048380ebdaf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
