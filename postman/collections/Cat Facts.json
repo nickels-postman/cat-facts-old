@@ -550,18 +550,6 @@
 					"body": "\"unsuccess\""
 				}
 			]
-		},
-		{
-			"name": "New Request",
-			"id": "14ef9b99-20fc-44d1-aa96-bdd6cd826249",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
 		}
 	],
 	"auth": {
