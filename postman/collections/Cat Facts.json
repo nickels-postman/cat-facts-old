@@ -19,7 +19,7 @@
 							"//pm.collectionVariables.set(\"breed-pages\", jsonData.total);",
 							"",
 							"pm.test(\"More than 10 pages of cat facts\", function () {",
-							"    pm.expect(jsonData.total).to.be.greaterThan(100);",
+							"    pm.expect(jsonData.total).to.be.greaterThan(10);",
 							"});",
 							"",
 							"",
