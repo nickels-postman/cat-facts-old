@@ -20,8 +20,9 @@
 							"    pm.expect(jsonData.total).to.be.greaterThan(10);",
 							"});",
 							"",
-							"",
-							""
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Mocktopia\");",
+							"});"
 						],
 						"type": "text/javascript"
 					}
