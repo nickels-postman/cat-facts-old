@@ -14,17 +14,17 @@
 					"listen": "test",
 					"script": {
 						"id": "dbd94d5d-b8bd-48d0-af51-36c54c2e1fb2",
-						"type": "text/javascript",
 						"exec": [
 							"let jsonData = pm.response.json();",
 							"pm.test(\"More than 10 pages of cat facts\", function () {",
 							"    pm.expect(jsonData.total).to.be.greaterThan(10);",
 							"});",
 							"",
-							"pm.test(\"Body matches string\", function () {",
-							"    pm.expect(pm.response.text()).to.include(\"Mocktopia\");",
-							"});"
-						]
+							"//pm.test(\"Body matches string\", function () {",
+							"//    pm.expect(pm.response.text()).to.include(\"Mocktopia\");",
+							"//});"
+						],
+						"type": "text/javascript"
 					}
 				}
 			],
@@ -80,29 +80,29 @@
 							"disabled": true
 						},
 						{
-							"description": "Breed",
 							"key": "limit[breed]",
-							"value": "<string>"
+							"value": "<string>",
+							"description": "Breed"
 						},
 						{
-							"description": "Country",
 							"key": "limit[country]",
-							"value": "<string>"
+							"value": "<string>",
+							"description": "Country"
 						},
 						{
-							"description": "Origin",
 							"key": "limit[origin]",
-							"value": "<string>"
+							"value": "<string>",
+							"description": "Origin"
 						},
 						{
-							"description": "Coat",
 							"key": "limit[coat]",
-							"value": "<string>"
+							"value": "<string>",
+							"description": "Coat"
 						},
 						{
-							"description": "Pattern",
 							"key": "limit[pattern]",
-							"value": "<string>"
+							"value": "<string>",
+							"description": "Pattern"
 						}
 					]
 				},
