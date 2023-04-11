@@ -9,7 +9,7 @@ id = e76ea6b4-8f11-49a8-8b76-333a9799b46f
 
 [config.relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"25998796-8f034259-5356-41ea-af20-f19eabe42269","path":"Cat Facts.json","metaData":{}}
+files[] = {"id":"25998796-8f034259-5356-41ea-af20-f19eabe42269","path":"Cat Facts.json","metaData":{"generateCollectionPreferences":"{\"updateCollectionSync\":true}"}}
 
 [config.relations.collections.metaData]
 

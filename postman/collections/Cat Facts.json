@@ -8,12 +8,13 @@
 	},
 	"item": [
 		{
-			"name": "get Breeds",
+			"name": "Returns a list of breeds",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"id": "dbd94d5d-b8bd-48d0-af51-36c54c2e1fb2",
+						"type": "text/javascript",
 						"exec": [
 							"let jsonData = pm.response.json();",
 							"pm.test(\"More than 10 pages of cat facts\", function () {",
@@ -23,8 +24,7 @@
 							"pm.test(\"Body matches string\", function () {",
 							"    pm.expect(pm.response.text()).to.include(\"Mocktopia\");",
 							"});"
-						],
-						"type": "text/javascript"
+						]
 					}
 				}
 			],
@@ -41,7 +41,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/breeds?breed=aliquip non sint in&country=aute ullamco&origin=laboris do incididunt&coat=fugiat aute reprehenderit magna&pattern=amet ipsum aute",
+					"raw": "{{baseUrl}}/breeds?limit[breed]=<string>&limit[country]=<string>&limit[origin]=<string>&limit[coat]=<string>&limit[pattern]=<string>",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -50,29 +50,59 @@
 					],
 					"query": [
 						{
+							"description": "This is a description",
 							"key": "breed",
 							"value": "aliquip non sint in",
-							"description": "This is a description"
+							"disabled": true
 						},
 						{
+							"description": "This is a description",
 							"key": "country",
 							"value": "aute ullamco",
-							"description": "This is a description"
+							"disabled": true
 						},
 						{
+							"description": "This is a description",
 							"key": "origin",
 							"value": "laboris do incididunt",
-							"description": "This is a description"
+							"disabled": true
 						},
 						{
+							"description": "This is a description",
 							"key": "coat",
 							"value": "fugiat aute reprehenderit magna",
-							"description": "This is a description"
+							"disabled": true
 						},
 						{
+							"description": "This is a description",
 							"key": "pattern",
 							"value": "amet ipsum aute",
-							"description": "This is a description"
+							"disabled": true
+						},
+						{
+							"description": "Breed",
+							"key": "limit[breed]",
+							"value": "<string>"
+						},
+						{
+							"description": "Country",
+							"key": "limit[country]",
+							"value": "<string>"
+						},
+						{
+							"description": "Origin",
+							"key": "limit[origin]",
+							"value": "<string>"
+						},
+						{
+							"description": "Coat",
+							"key": "limit[coat]",
+							"value": "<string>"
+						},
+						{
+							"description": "Pattern",
+							"key": "limit[pattern]",
+							"value": "<string>"
 						}
 					]
 				},
@@ -125,7 +155,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "json",
+					"_postman_previewlanguage": "Text",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -133,7 +163,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "\"success\""
+					"body": "{\n  \"breed\": \"<string>\",\n  \"country\": \"<string>\",\n  \"origin\": \"<string>\",\n  \"coat\": \"<string>\",\n  \"pattern\": \"<string>\"\n}"
 				},
 				{
 					"id": "f35ef0cf-324c-4adc-a92e-ae1f3338809c",
@@ -181,7 +211,7 @@
 					},
 					"status": "Internal Server Error",
 					"code": 500,
-					"_postman_previewlanguage": "json",
+					"_postman_previewlanguage": "Text",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -189,7 +219,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "\"unsuccessful\""
+					"body": "{\n  \"breed\": \"<string>\",\n  \"country\": \"<string>\",\n  \"origin\": \"<string>\",\n  \"coat\": \"<string>\",\n  \"pattern\": \"<string>\"\n}"
 				}
 			]
 		},
@@ -208,7 +238,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/fact?breed=<string>&country=<string>&origin=<string>&coat=<string>&pattern=<string>",
+					"raw": "{{baseUrl}}/fact?max_length[breed]=<string>&max_length[country]=<string>&max_length[origin]=<string>&max_length[coat]=<string>&max_length[pattern]=<string>",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -217,29 +247,59 @@
 					],
 					"query": [
 						{
+							"description": "maximum length of returned fact",
 							"key": "breed",
 							"value": "<string>",
-							"description": "maximum length of returned fact"
+							"disabled": true
 						},
 						{
+							"description": "maximum length of returned fact",
 							"key": "country",
 							"value": "<string>",
-							"description": "maximum length of returned fact"
+							"disabled": true
 						},
 						{
+							"description": "maximum length of returned fact",
 							"key": "origin",
 							"value": "<string>",
-							"description": "maximum length of returned fact"
+							"disabled": true
 						},
 						{
+							"description": "maximum length of returned fact",
 							"key": "coat",
 							"value": "<string>",
-							"description": "maximum length of returned fact"
+							"disabled": true
 						},
 						{
+							"description": "maximum length of returned fact",
 							"key": "pattern",
 							"value": "<string>",
-							"description": "maximum length of returned fact"
+							"disabled": true
+						},
+						{
+							"description": "Breed",
+							"key": "max_length[breed]",
+							"value": "<string>"
+						},
+						{
+							"description": "Country",
+							"key": "max_length[country]",
+							"value": "<string>"
+						},
+						{
+							"description": "Origin",
+							"key": "max_length[origin]",
+							"value": "<string>"
+						},
+						{
+							"description": "Coat",
+							"key": "max_length[coat]",
+							"value": "<string>"
+						},
+						{
+							"description": "Pattern",
+							"key": "max_length[pattern]",
+							"value": "<string>"
 						}
 					]
 				},
@@ -404,7 +464,7 @@
 					},
 					"status": "Internal Server Error",
 					"code": 500,
-					"_postman_previewlanguage": "json",
+					"_postman_previewlanguage": "Text",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -412,7 +472,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "\"unsuccess\""
+					"body": "{\n  \"fact\": \"<string>\",\n  \"length\": \"<integer>\"\n}"
 				}
 			]
 		},
@@ -431,7 +491,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/facts?fact=anim pariatur&length=-78240249&fact=<string>&length=<integer>",
+					"raw": "{{baseUrl}}/facts?max_length[fact]=<string>&max_length[length]=<integer>&limit[fact]=<string>&limit[length]=<integer>",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -440,24 +500,48 @@
 					],
 					"query": [
 						{
+							"description": "length",
 							"key": "fact",
 							"value": "anim pariatur",
-							"description": "length"
+							"disabled": true
 						},
 						{
+							"description": "length",
 							"key": "length",
 							"value": "-78240249",
-							"description": "length"
+							"disabled": true
 						},
 						{
+							"description": "limit the amount of results returned",
 							"key": "fact",
 							"value": "<string>",
-							"description": "limit the amount of results returned"
+							"disabled": true
 						},
 						{
+							"description": "limit the amount of results returned",
 							"key": "length",
 							"value": "<integer>",
-							"description": "limit the amount of results returned"
+							"disabled": true
+						},
+						{
+							"description": "Fact",
+							"key": "max_length[fact]",
+							"value": "<string>"
+						},
+						{
+							"description": "Length",
+							"key": "max_length[length]",
+							"value": "<integer>"
+						},
+						{
+							"description": "Fact",
+							"key": "limit[fact]",
+							"value": "<string>"
+						},
+						{
+							"description": "Length",
+							"key": "limit[length]",
+							"value": "<integer>"
 						}
 					]
 				},
@@ -506,7 +590,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "json",
+					"_postman_previewlanguage": "Text",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -514,7 +598,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "\"success\""
+					"body": "{\n  \"fact\": \"<string>\",\n  \"length\": \"<integer>\"\n}"
 				},
 				{
 					"id": "ab263265-21c3-4b0f-bc54-1bd97df57b2a",
@@ -558,7 +642,7 @@
 					},
 					"status": "Internal Server Error",
 					"code": 500,
-					"_postman_previewlanguage": "json",
+					"_postman_previewlanguage": "Text",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -566,7 +650,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "\"unsuccess\""
+					"body": "{\n  \"fact\": \"<string>\",\n  \"length\": \"<integer>\"\n}"
 				}
 			]
 		}
