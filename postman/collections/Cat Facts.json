@@ -477,6 +477,156 @@
 					],
 					"cookie": [],
 					"body": "{\n  \"fact\": \"<string>\",\n  \"length\": \"<integer>\"\n}"
+				},
+				{
+					"id": "0d00a2a5-1a51-4bdd-9fe0-638719d40e9f",
+					"name": "TEST RESPONSE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/fact?max_length[breed]=<string>&max_length[country]=<string>&max_length[origin]=<string>&max_length[coat]=<string>&max_length[pattern]=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fact"
+							],
+							"query": [
+								{
+									"description": "maximum length of returned fact",
+									"key": "breed",
+									"value": "<string>",
+									"disabled": true
+								},
+								{
+									"description": "maximum length of returned fact",
+									"key": "country",
+									"value": "<string>",
+									"disabled": true
+								},
+								{
+									"description": "maximum length of returned fact",
+									"key": "origin",
+									"value": "<string>",
+									"disabled": true
+								},
+								{
+									"description": "maximum length of returned fact",
+									"key": "coat",
+									"value": "<string>",
+									"disabled": true
+								},
+								{
+									"description": "maximum length of returned fact",
+									"key": "pattern",
+									"value": "<string>",
+									"disabled": true
+								},
+								{
+									"key": "max_length[breed]",
+									"value": "<string>",
+									"description": "Breed"
+								},
+								{
+									"key": "max_length[country]",
+									"value": "<string>",
+									"description": "Country"
+								},
+								{
+									"key": "max_length[origin]",
+									"value": "<string>",
+									"description": "Origin"
+								},
+								{
+									"key": "max_length[coat]",
+									"value": "<string>",
+									"description": "Coat"
+								},
+								{
+									"key": "max_length[pattern]",
+									"value": "<string>",
+									"description": "Pattern"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Apr 2023 16:03:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6ImR6Q3pFTXVpR2ZUTWJKZVlrcUwreFE9PSIsInZhbHVlIjoiM0tCK1NhUHYzejRWMWg2a1pFNWRlajRTTEwyU04rVTFJL1lWNHlLVm83a2diaytCcWl2VCtlZnRqNUoxc1RFQjNyckNUOTlKbS85SEJia08xNGFDakdwMm1ia09hT2ttRmtUMiszaHY5RW16Q3RtMS9KSzFITUpqTUNiZGJIMnoiLCJtYWMiOiJhODJmNTFkZjEyMzBjOTQ0MGQ0NTE1NDI1MDQ4OTE3ZWVmYjNkM2VlYzQwNjdkZjJkMTAxNGMxNDYwNDQ1NTNmIiwidGFnIjoiIn0%3D; expires=Thu, 13-Apr-2023 18:03:21 GMT; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "catfacts_session=eyJpdiI6IkdSTFZTK2lFUnl3WEZqbTVxbTFWNmc9PSIsInZhbHVlIjoid1pFbHZtbzJIMkd4VzBicE1CcVZQdmFlVFVMM0liMUpIMGNJTjdQbzN3QitSLzJBNzVJRTJFK2ZvY2xLa0xFWi9TdnVHZWhkM0svWEVjQ0VoWWJ6ZUpnTEJuQjBDMnAxRi9abkx5TktNTnk2SEo4WStpaDFCNUNBUzJCMEFwL0kiLCJtYWMiOiI5MWViMWIzYjVkNzhiMzExOGEzOGY0OWUyZTg0MTA5ZDFlNzM3ZWI4ZTFiY2Y1YzdiMzU3ODYxM2QxZDgwNjU0IiwidGFnIjoiIn0%3D; expires=Thu, 13-Apr-2023 18:03:21 GMT; path=/; httponly; samesite=lax"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"fact\": \"TEST RESPONSE.\",\n    \"length\": 2\n}"
 				}
 			]
 		},
