@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "8f034259-5356-41ea-af20-f19eabe42269",
 		"name": "Cat Facts",
-		"description": "Cat Fact API\n\nContact Support:  \nName: Amanda  \nEmail: [admin@admin.com](mailto:admin@admin.com)\n\nThese cat APIs are intended to bring joy to cat lovers. Please use responsibly.\n\n<img src=\"https://content.pstmn.io/40c0556e-7f7e-4ad2-8954-090c76588ed7/Y2F0LmdpZg==\" alt=\"\">",
+		"description": "## Cat Fact API\n\n- Contact Support:\n- Name: Amanda\n- Email: [admin@admin.com](mailto:admin@admin.com)\n    \n\nThese cat APIs are intended to bring joy to cat lovers. _Please use responsibly._\n\n<img src=\"https://content.pstmn.io/40c0556e-7f7e-4ad2-8954-090c76588ed7/Y2F0LmdpZg==\">",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "25998796-8f034259-5356-41ea-af20-f19eabe42269"
 	},
@@ -575,9 +575,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/facts?fact=<string>&length=<integer>&fact=<string>&length=<integer>",
+							"raw": "https://catfact.ninja/facts?fact=<string>&length=<integer>&fact=<string>&length=<integer>",
+							"protocol": "https",
 							"host": [
-								"{{baseUrl}}"
+								"catfact",
+								"ninja"
 							],
 							"path": [
 								"facts"
