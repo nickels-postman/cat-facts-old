@@ -2,7 +2,7 @@ openapi: 3.0.0
 x-apiname: catFacts
 x-responsetime: 10000
 info:
-  title: Cat Fact API
+  title: Cat Fact API 
   description: Cat Fact API
   contact:
     email: admin@admin.com
@@ -73,7 +73,6 @@ paths:
             type: integer
             format: int64
             default: 10
-            $ref: '#/components/schemas/Breed'
       responses:
         '200':
           description: Normal response
@@ -81,9 +80,6 @@ paths:
             application/json:
               example: 
                 fact: "A cat's normal pulse is 140-240 beats per minute, with an average of 195."
-                length: 73
-              schema:
-                $ref: '#/components/schemas/CatFact'
         '404':
           description: Fact not found
         '500':
@@ -91,8 +87,6 @@ paths:
           content:
             application/json:
               example: unsuccess
-              schema:
-                $ref: '#/components/schemas/CatFact'
   /facts:
     get:
       tags:
@@ -196,5 +190,3 @@ tags:
     description: Cat Facts
   - name: Breeds
     description: Breeds
-security:
-  - BasicAuth: []
