@@ -16,8 +16,8 @@
 						"id": "dbd94d5d-b8bd-48d0-af51-36c54c2e1fb2",
 						"exec": [
 							"let jsonData = pm.response.json();",
-							"pm.test(\"More than 10 pages of cat facts\", function () {",
-							"    pm.expect(jsonData.total).to.be.greaterThan(10);",
+							"pm.test(\"More than 300 pages of cat facts\", function () {",
+							"    pm.expect(jsonData.total).to.be.greaterThan(300);",
 							"});",
 							"",
 							"//pm.test(\"Body matches string\", function () {",
@@ -227,6 +227,20 @@
 		},
 		{
 			"name": "Returns a random fact",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a1695724-e47c-4509-b552-f4064b914cea",
+						"exec": [
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "5ed572bf-363d-4499-aa37-b2a3ef520343",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -309,9 +323,9 @@
 							"disabled": true
 						},
 						{
-							"description": "maximum length of returned fact",
 							"key": "max_length",
-							"value": "10"
+							"value": "10",
+							"description": "maximum length of returned fact"
 						}
 					]
 				},
@@ -492,6 +506,20 @@
 		},
 		{
 			"name": "Get a list of facts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ced6a578-cf5b-4763-aaa3-f31d15ced288",
+						"exec": [
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "0929583a-7444-4113-a676-ce8d4d373540",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -538,24 +566,24 @@
 							"disabled": true
 						},
 						{
-							"description": "Fact",
 							"key": "max_length[fact]",
-							"value": "<string>"
+							"value": "<string>",
+							"description": "Fact"
 						},
 						{
-							"description": "Length",
 							"key": "max_length[length]",
-							"value": "<integer>"
+							"value": "<integer>",
+							"description": "Length"
 						},
 						{
-							"description": "Fact",
 							"key": "limit[fact]",
-							"value": "<string>"
+							"value": "<string>",
+							"description": "Fact"
 						},
 						{
-							"description": "Length",
 							"key": "limit[length]",
-							"value": "<integer>"
+							"value": "<integer>",
+							"description": "Length"
 						}
 					]
 				},
