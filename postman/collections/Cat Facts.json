@@ -16,8 +16,8 @@
 						"id": "dbd94d5d-b8bd-48d0-af51-36c54c2e1fb2",
 						"exec": [
 							"let jsonData = pm.response.json();",
-							"pm.test(\"More than 30 pages of cat facts\", function () {",
-							"    pm.expect(jsonData.total).to.be.greaterThan(30);",
+							"pm.test(\"More than 300 pages of cat facts\", function () {",
+							"    pm.expect(jsonData.total).to.be.greaterThan(300);",
 							"});",
 							"",
 							"//pm.test(\"Body matches string\", function () {",
