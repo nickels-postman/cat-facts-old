@@ -17,7 +17,7 @@
 						"exec": [
 							"let jsonData = pm.response.json();",
 							"pm.test(\"More than 30 pages of cat facts\", function () {",
-							"    pm.expect(jsonData.total).to.be.greaterThan(30);",
+							"    pm.expect(jsonData.total).to.be.greaterThan(300);",
 							"});",
 							"",
 							"//pm.test(\"Body matches string\", function () {",
