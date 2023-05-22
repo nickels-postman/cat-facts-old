@@ -716,9 +716,33 @@
 			}
 		]
 	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "daa3edfd-8569-4f92-9316-073a6f4e12c9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1bb90b0e-1c7f-4c25-ad50-6e1b2cdf35d3",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Response time is less than 500ms\", function () {",
+					"    pm.expect(pm.response.responseTime).to.be.below(500);",
+					"});"
+				]
+			}
+		}
+	],
 	"variable": [
 		{
-			"id": "a77192cf-fd2c-4ebe-b3ec-72d9b8ea1aae",
+			"id": "bc2b6619-359c-4d8d-b88a-68479a4f93ad",
 			"key": "baseUrl",
 			"value": "https://catfact.ninja",
 			"type": "string"

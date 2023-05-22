@@ -2,8 +2,8 @@ openapi: 3.0.0
 x-apiname: catFacts
 x-responsetime: 10000
 info:
-  title: Cat Fact 
-  description: Cat Fact API
+  title: Cat Fact API
+  description: Cat Fact API 
   contact:
     email: admin@admin.com
     url: https://catfact.ninja
@@ -190,3 +190,5 @@ tags:
     description: Cat Facts
   - name: Breeds
     description: Breeds
+security:
+  - BasicAuth: []
