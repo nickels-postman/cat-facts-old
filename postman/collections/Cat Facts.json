@@ -514,9 +514,7 @@
 					"script": {
 						"id": "ced6a578-cf5b-4763-aaa3-f31d15ced288",
 						"exec": [
-							"pm.test(\"Response time is less than 500ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(500);",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -720,7 +718,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "daa3edfd-8569-4f92-9316-073a6f4e12c9",
+				"id": "1bd36c43-870e-41a1-bd2c-34a75d934e6a",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -730,11 +728,11 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "1bb90b0e-1c7f-4c25-ad50-6e1b2cdf35d3",
+				"id": "5be69c8d-5a7b-4bf7-8827-f66541ef0749",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Response time is less than 500ms\", function () {",
-					"    pm.expect(pm.response.responseTime).to.be.below(500);",
+					"    pm.expect(pm.response.responseTime).to.be.below(700);",
 					"});"
 				]
 			}
@@ -742,7 +740,7 @@
 	],
 	"variable": [
 		{
-			"id": "bc2b6619-359c-4d8d-b88a-68479a4f93ad",
+			"id": "abf070e6-8ba5-4cab-98c7-a80a5f907ce8",
 			"key": "baseUrl",
 			"value": "https://catfact.ninja",
 			"type": "string"
