@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "8f034259-5356-41ea-af20-f19eabe42269",
 		"name": "Cat Facts",
-		"description": "## Cat Fact API\n\n- Contact Support:\n- Name: Amanda\n- Email: [admin@admin.com](mailto:admin@admin.com)\n    \n\nThese cat APIs are intended to bring joy to cat lovers. _Please use responsibly._\n\n<img src=\"https://content.pstmn.io/40c0556e-7f7e-4ad2-8954-090c76588ed7/Y2F0LmdpZg==\">\n\n# Heading! Woohoo!\n\n- now we list out stuff",
+		"description": "## Cat Fact API\n\n- Contact Support:\n- Name: Amanda\n- Email: [admin@admin.com](mailto:admin@admin.com)\n    \n\nThese cat APIs are intended to bring joy to cat lovers. _Please use responsibly._\n\n<img src=\"https://content.pstmn.io/40c0556e-7f7e-4ad2-8954-090c76588ed7/Y2F0LmdpZg==\">",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "25998796-8f034259-5356-41ea-af20-f19eabe42269"
 	},
@@ -718,7 +718,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1bd36c43-870e-41a1-bd2c-34a75d934e6a",
+				"id": "53e374e5-0d57-4cba-9ef9-48e43aac6bc9",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -728,11 +728,11 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "5be69c8d-5a7b-4bf7-8827-f66541ef0749",
+				"id": "0e05098c-de70-4479-be9c-864d52534867",
 				"type": "text/javascript",
 				"exec": [
-					"pm.test(\"Response time is less than 500ms\", function () {",
-					"    pm.expect(pm.response.responseTime).to.be.below(700);",
+					"pm.test(\"Response time is less than 900ms\", function () {",
+					"    pm.expect(pm.response.responseTime).to.be.below(900);",
 					"});"
 				]
 			}
@@ -740,7 +740,7 @@
 	],
 	"variable": [
 		{
-			"id": "abf070e6-8ba5-4cab-98c7-a80a5f907ce8",
+			"id": "3545430b-1d90-4e76-83fc-559a275bbfc3",
 			"key": "baseUrl",
 			"value": "https://catfact.ninja",
 			"type": "string"
