@@ -189,5 +189,3 @@ tags:
     description: Cat Facts
   - name: Breeds
     description: Breed
-security:
-  - BasicAuth: []
