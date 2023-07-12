@@ -186,6 +186,6 @@ components:
       type: object
 tags:
   - name: Facts
-    description: Cat Facts
+    description: Cat Factss
   - name: Breeds
     description: Breed
