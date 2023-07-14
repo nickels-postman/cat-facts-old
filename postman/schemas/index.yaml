@@ -16,7 +16,7 @@ servers:
   - url: https://catfact.ninja
     description: prod
 paths:
-  /breeds:
+  /breeeds:
     get:
       summary: Returns a list of breeds
       tags:
