@@ -235,8 +235,19 @@
 					"script": {
 						"id": "a1695724-e47c-4509-b552-f4064b914cea",
 						"exec": [
-							"pm.test(\"Response time is less than 500ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"const schema = {",
+							"    \"properties\": {",
+							"        \"fact\": {",
+							"            \"type\": \"string\"",
+							"        },",
+							"        \"length\": {",
+							"            \"type\": \"integer\"",
+							"        }",
+							"    }",
+							"};",
+							"",
+							"pm.test('Schema is valid', function () {",
+							"    pm.response.to.have.jsonSchema(schema);",
 							"});"
 						],
 						"type": "text/javascript"
@@ -256,7 +267,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/fact?max_length=10",
+					"raw": "{{baseUrl}}/fact?",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -325,9 +336,8 @@
 							"disabled": true
 						},
 						{
-							"key": "max_length",
-							"value": "10",
-							"description": "maximum length of returned fact"
+							"key": "",
+							"value": null
 						}
 					]
 				},
