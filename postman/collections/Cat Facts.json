@@ -729,7 +729,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "53e374e5-0d57-4cba-9ef9-48e43aac6bc9",
+				"id": "38c19985-f2ca-4d3b-838b-7fe5690f5637",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -739,11 +739,15 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "0e05098c-de70-4479-be9c-864d52534867",
+				"id": "a099deb7-e448-47a2-ad3c-fda399f890dd",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Response time is less than 900ms\", function () {",
 					"    pm.expect(pm.response.responseTime).to.be.below(900);",
+					"});",
+					"",
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
 					"});"
 				]
 			}
@@ -751,7 +755,7 @@
 	],
 	"variable": [
 		{
-			"id": "3545430b-1d90-4e76-83fc-559a275bbfc3",
+			"id": "23aa87b2-2323-439b-994b-9a22dd18bd7c",
 			"key": "baseUrl",
 			"value": "https://catfact.ninja",
 			"type": "string"
