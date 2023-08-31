@@ -14,6 +14,7 @@
 					"listen": "test",
 					"script": {
 						"id": "dbd94d5d-b8bd-48d0-af51-36c54c2e1fb2",
+						"type": "text/javascript",
 						"exec": [
 							"let jsonData = pm.response.json();",
 							"pm.test(\"More than 30 pages of cat facts\", function () {",
@@ -25,8 +26,7 @@
 							"//pm.test(\"Body matches string\", function () {",
 							"//    pm.expect(pm.response.text()).to.include(\"Mocktopia\");",
 							"//});"
-						],
-						"type": "text/javascript"
+						]
 					}
 				}
 			],
@@ -43,7 +43,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/breeds?limit[breed]=<string>&limit[country]=<string>&limit[origin]=<string>&limit[coat]=<string>&limit[pattern]=<string>",
+					"raw": "{{baseUrl}}/breeds?limit=<long>",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -82,29 +82,39 @@
 							"disabled": true
 						},
 						{
+							"description": "Breed",
 							"key": "limit[breed]",
 							"value": "<string>",
-							"description": "Breed"
+							"disabled": true
 						},
 						{
+							"description": "Country",
 							"key": "limit[country]",
 							"value": "<string>",
-							"description": "Country"
+							"disabled": true
 						},
 						{
+							"description": "Origin",
 							"key": "limit[origin]",
 							"value": "<string>",
-							"description": "Origin"
+							"disabled": true
 						},
 						{
+							"description": "Coat",
 							"key": "limit[coat]",
 							"value": "<string>",
-							"description": "Coat"
+							"disabled": true
 						},
 						{
+							"description": "Pattern",
 							"key": "limit[pattern]",
 							"value": "<string>",
-							"description": "Pattern"
+							"disabled": true
+						},
+						{
+							"description": "This is a description",
+							"key": "limit",
+							"value": "<long>"
 						}
 					]
 				},
@@ -234,6 +244,7 @@
 					"listen": "test",
 					"script": {
 						"id": "a1695724-e47c-4509-b552-f4064b914cea",
+						"type": "text/javascript",
 						"exec": [
 							"const schema = {",
 							"    \"properties\": {",
@@ -250,8 +261,7 @@
 							"    pm.response.to.have.jsonSchema(schema);",
 							"});",
 							""
-						],
-						"type": "text/javascript"
+						]
 					}
 				}
 			],
@@ -268,7 +278,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/fact?",
+					"raw": "{{baseUrl}}/fact?max_length=10",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -338,7 +348,18 @@
 						},
 						{
 							"key": "",
-							"value": null
+							"value": null,
+							"disabled": true
+						},
+						{
+							"description": "maximum length of returned fact",
+							"key": "max_length",
+							"value": "10"
+						},
+						{
+							"key": "",
+							"value": "null",
+							"disabled": true
 						}
 					]
 				},
@@ -524,10 +545,10 @@
 					"listen": "test",
 					"script": {
 						"id": "ced6a578-cf5b-4763-aaa3-f31d15ced288",
+						"type": "text/javascript",
 						"exec": [
 							""
-						],
-						"type": "text/javascript"
+						]
 					}
 				}
 			],
@@ -544,7 +565,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/facts?max_length[fact]=<string>&max_length[length]=<integer>&limit[fact]=<string>&limit[length]=<integer>",
+					"raw": "{{baseUrl}}/facts?max_length=<long>&limit=<long>",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -567,34 +588,48 @@
 						{
 							"description": "limit the amount of results returned",
 							"key": "fact",
-							"value": "<string>",
+							"value": "anim pariatur",
 							"disabled": true
 						},
 						{
 							"description": "limit the amount of results returned",
 							"key": "length",
+							"value": "-78240249",
+							"disabled": true
+						},
+						{
+							"description": "Fact",
+							"key": "max_length[fact]",
+							"value": "<string>",
+							"disabled": true
+						},
+						{
+							"description": "Length",
+							"key": "max_length[length]",
 							"value": "<integer>",
 							"disabled": true
 						},
 						{
-							"key": "max_length[fact]",
-							"value": "<string>",
-							"description": "Fact"
-						},
-						{
-							"key": "max_length[length]",
-							"value": "<integer>",
-							"description": "Length"
-						},
-						{
+							"description": "Fact",
 							"key": "limit[fact]",
 							"value": "<string>",
-							"description": "Fact"
+							"disabled": true
 						},
 						{
+							"description": "Length",
 							"key": "limit[length]",
 							"value": "<integer>",
-							"description": "Length"
+							"disabled": true
+						},
+						{
+							"description": "length",
+							"key": "max_length",
+							"value": "<long>"
+						},
+						{
+							"description": "limit the amount of results returned",
+							"key": "limit",
+							"value": "<long>"
 						}
 					]
 				},
@@ -755,7 +790,7 @@
 	],
 	"variable": [
 		{
-			"id": "23aa87b2-2323-439b-994b-9a22dd18bd7c",
+			"id": "76fba256-b508-4dc5-9935-fe58313db71f",
 			"key": "baseUrl",
 			"value": "https://catfact.ninja",
 			"type": "string"

@@ -32,7 +32,6 @@ paths:
           schema:
             type: integer
             format: int64
-            $ref: '#/components/schemas/Breed'
       responses:
         '200':
           description: Normal operation
@@ -102,7 +101,6 @@ paths:
           schema:
             type: integer
             format: int64
-            $ref: '#/components/schemas/CatFact'
         - name: limit
           in: query
           description: limit the amount of results returned
@@ -111,7 +109,6 @@ paths:
           schema:
             type: integer
             format: int64
-            $ref: '#/components/schemas/CatFact'
       responses:
         '200':
           description: successful operation
