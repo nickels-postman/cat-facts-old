@@ -55,7 +55,7 @@ paths:
                 $ref: '#/components/schemas/Breed'  
   /factTest:
     get:
-      summary: Returns a random fact
+      summary: Returns a random fact TEST
       tags:
         - Facts
       description: Returns a random fact
@@ -86,7 +86,7 @@ paths:
               example: unsuccess
   /breedsTest:
     get:
-      summary: Returns a list of breeds
+      summary: Returns a list of breeds TEST
       tags:
         - Breeds
       description: Returns a list of breeds

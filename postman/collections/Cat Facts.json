@@ -8,236 +8,6 @@
 	},
 	"item": [
 		{
-			"name": "Returns a list of breeds",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "dbd94d5d-b8bd-48d0-af51-36c54c2e1fb2",
-						"type": "text/javascript",
-						"exec": [
-							"let jsonData = pm.response.json();",
-							"pm.test(\"More than 30 pages of cat facts\", function () {",
-							"    pm.expect(jsonData.total).to.be.greaterThan(30);",
-							"});",
-							"",
-							"",
-							"",
-							"//pm.test(\"Body matches string\", function () {",
-							"//    pm.expect(pm.response.text()).to.include(\"Mocktopia\");",
-							"//});"
-						]
-					}
-				}
-			],
-			"id": "572c2030-2173-4215-aadc-3048380ebdaf",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json"
-					}
-				],
-				"url": {
-					"raw": "{{baseUrl}}/breeds?limit=<long>",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"breeds"
-					],
-					"query": [
-						{
-							"description": "This is a description",
-							"key": "breed",
-							"value": "aliquip non sint in",
-							"disabled": true
-						},
-						{
-							"description": "This is a description",
-							"key": "country",
-							"value": "aute ullamco",
-							"disabled": true
-						},
-						{
-							"description": "This is a description",
-							"key": "origin",
-							"value": "laboris do incididunt",
-							"disabled": true
-						},
-						{
-							"description": "This is a description",
-							"key": "coat",
-							"value": "fugiat aute reprehenderit magna",
-							"disabled": true
-						},
-						{
-							"description": "This is a description",
-							"key": "pattern",
-							"value": "amet ipsum aute",
-							"disabled": true
-						},
-						{
-							"description": "Breed",
-							"key": "limit[breed]",
-							"value": "<string>",
-							"disabled": true
-						},
-						{
-							"description": "Country",
-							"key": "limit[country]",
-							"value": "<string>",
-							"disabled": true
-						},
-						{
-							"description": "Origin",
-							"key": "limit[origin]",
-							"value": "<string>",
-							"disabled": true
-						},
-						{
-							"description": "Coat",
-							"key": "limit[coat]",
-							"value": "<string>",
-							"disabled": true
-						},
-						{
-							"description": "Pattern",
-							"key": "limit[pattern]",
-							"value": "<string>",
-							"disabled": true
-						},
-						{
-							"description": "This is a description",
-							"key": "limit",
-							"value": "<long>"
-						}
-					]
-				},
-				"description": "Returns a list of breeds"
-			},
-			"response": [
-				{
-					"id": "d35bd25c-adeb-4f34-a3c9-21ef60f5edb7",
-					"name": "Normal operation",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"description": "Added as a part of security scheme: basic",
-								"key": "Authorization",
-								"value": "Basic <credentials>"
-							}
-						],
-						"url": {
-							"raw": "https://catfact.ninja/breeds?breed=<string>&country=<string>&origin=<string>&coat=<string>&pattern=<string>",
-							"protocol": "https",
-							"host": [
-								"catfact",
-								"ninja"
-							],
-							"path": [
-								"breeds"
-							],
-							"query": [
-								{
-									"key": "breed",
-									"value": "<string>"
-								},
-								{
-									"key": "country",
-									"value": "<string>"
-								},
-								{
-									"key": "origin",
-									"value": "<string>"
-								},
-								{
-									"key": "coat",
-									"value": "<string>"
-								},
-								{
-									"key": "pattern",
-									"value": "<string>"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "Text",
-					"header": [
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						}
-					],
-					"cookie": [],
-					"body": "{\n  \"breed\": \"<string>\",\n  \"country\": \"<string>\",\n  \"origin\": \"<string>\",\n  \"coat\": \"<string>\",\n  \"pattern\": \"<string>\"\n}"
-				},
-				{
-					"id": "f35ef0cf-324c-4adc-a92e-ae1f3338809c",
-					"name": "Server exception",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"description": "Added as a part of security scheme: basic",
-								"key": "Authorization",
-								"value": "Basic <credentials>"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/breeds?breed=<string>&country=<string>&origin=<string>&coat=<string>&pattern=<string>",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"breeds"
-							],
-							"query": [
-								{
-									"key": "breed",
-									"value": "<string>"
-								},
-								{
-									"key": "country",
-									"value": "<string>"
-								},
-								{
-									"key": "origin",
-									"value": "<string>"
-								},
-								{
-									"key": "coat",
-									"value": "<string>"
-								},
-								{
-									"key": "pattern",
-									"value": "<string>"
-								}
-							]
-						}
-					},
-					"status": "Internal Server Error",
-					"code": 500,
-					"_postman_previewlanguage": "Text",
-					"header": [
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						}
-					],
-					"cookie": [],
-					"body": "{\n  \"breed\": \"<string>\",\n  \"country\": \"<string>\",\n  \"origin\": \"<string>\",\n  \"coat\": \"<string>\",\n  \"pattern\": \"<string>\"\n}"
-				}
-			]
-		},
-		{
 			"name": "Returns a random fact",
 			"event": [
 				{
@@ -741,6 +511,380 @@
 					],
 					"cookie": [],
 					"body": "{\n  \"fact\": \"<string>\",\n  \"length\": \"<integer>\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Returns a random fact TEST",
+			"id": "2e7e8228-5fc5-4839-91cd-4966c0be1199",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/factTest?max_length=10",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"factTest"
+					],
+					"query": [
+						{
+							"description": "maximum length of returned fact",
+							"key": "max_length",
+							"value": "10"
+						}
+					]
+				},
+				"description": "Returns a random fact"
+			},
+			"response": [
+				{
+					"id": "4a72b0bc-befc-4061-b840-9b71223c0458",
+					"name": "Normal response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/factTest?max_length=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"factTest"
+							],
+							"query": [
+								{
+									"description": "maximum length of returned fact",
+									"key": "max_length",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"example\": {\n    \"fact\": \"A cat's normal pulse is 140-240 beats per minute, with an average of 195.\"\n  }\n}"
+				},
+				{
+					"id": "c422b82b-400c-4a1a-ae0a-bdd60d58bf99",
+					"name": "Fact not found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/factTest?max_length=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"factTest"
+							],
+							"query": [
+								{
+									"description": "maximum length of returned fact",
+									"key": "max_length",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				},
+				{
+					"id": "b6a19783-a505-415b-b706-9c6a0ffbfdcf",
+					"name": "Normal response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/factTest?max_length=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"factTest"
+							],
+							"query": [
+								{
+									"description": "maximum length of returned fact",
+									"key": "max_length",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"example\": \"unsuccess\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Returns a list of breeds TEST",
+			"id": "6a8767f4-8dcd-466a-9b54-353ab386e980",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/breedsTest?limit=<long>",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"breedsTest"
+					],
+					"query": [
+						{
+							"description": "This is a description",
+							"key": "limit",
+							"value": "<long>"
+						}
+					]
+				},
+				"description": "Returns a list of breeds"
+			},
+			"response": [
+				{
+					"id": "e1cd42b4-37fc-47ab-b641-6f4974e7288a",
+					"name": "Normal operation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/breedsTest?limit=<long>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"breedsTest"
+							],
+							"query": [
+								{
+									"description": "This is a description",
+									"key": "limit",
+									"value": "<long>"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"breed\": \"<string>\",\n  \"country\": \"<string>\",\n  \"origin\": \"<string>\",\n  \"coat\": \"<string>\",\n  \"pattern\": \"<string>\"\n}"
+				},
+				{
+					"id": "aa049f11-c38e-4468-8999-f18c7cb21163",
+					"name": "Server exception",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/breedsTest?limit=<long>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"breedsTest"
+							],
+							"query": [
+								{
+									"description": "This is a description",
+									"key": "limit",
+									"value": "<long>"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"breed\": \"<string>\",\n  \"country\": \"<string>\",\n  \"origin\": \"<string>\",\n  \"coat\": \"<string>\",\n  \"pattern\": \"<string>\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Returns a list of breeds",
+			"id": "47e281f7-1bbc-4891-be90-f0d771acf80c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/breeds?limit=<long>",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"breeds"
+					],
+					"query": [
+						{
+							"description": "This is a description",
+							"key": "limit",
+							"value": "<long>"
+						}
+					]
+				},
+				"description": "Returns a list of breeds"
+			},
+			"response": [
+				{
+					"id": "72cdd11a-3d17-4228-87b9-7a1b16d89fa6",
+					"name": "Normal operation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/breeds?limit=<long>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"breeds"
+							],
+							"query": [
+								{
+									"description": "This is a description",
+									"key": "limit",
+									"value": "<long>"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"breed\": \"exercitation elit dolore\",\n  \"country\": \"ea ad eu\",\n  \"origin\": \"velit\",\n  \"coat\": \"ut velit nisi cupidatat\",\n  \"pattern\": \"cillum in\"\n}"
+				},
+				{
+					"id": "fb6961fb-ef36-46db-94ee-abb50f13a3e6",
+					"name": "Server exception",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/breeds?limit=<long>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"breeds"
+							],
+							"query": [
+								{
+									"description": "This is a description",
+									"key": "limit",
+									"value": "<long>"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"breed\": \"exercitation elit dolore\",\n  \"country\": \"ea ad eu\",\n  \"origin\": \"velit\",\n  \"coat\": \"ut velit nisi cupidatat\",\n  \"pattern\": \"cillum in\"\n}"
 				}
 			]
 		}
