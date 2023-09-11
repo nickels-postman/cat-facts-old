@@ -52,8 +52,75 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Breed'
+                $ref: '#/components/schemas/Breed'  
+  /factTest:
+    get:
+      summary: Returns a random fact
+      tags:
+        - Facts
+      description: Returns a random fact
+      operationId: getRandomFact
+      parameters:
+        - name: max_length
+          in: query
+          description: maximum length of returned fact
+          required: false
+          example: success
+          schema:
+            type: integer
+            format: int64
+            default: 10
+      responses:
+        '200':
+          description: Normal response
+          content:
+            application/json:
+              example: 
+                fact: "A cat's normal pulse is 140-240 beats per minute, with an average of 195."
+        '404':
+          description: Fact not found
+        '500':
+          description: Normal response
+          content:
+            application/json:
+              example: unsuccess
+  /breedsTest:
+    get:
+      summary: Returns a list of breeds
+      tags:
+        - Breeds
+      description: Returns a list of breeds
+      operationId: getBreeds
+      parameters:
+        - name: limit
+          in: query
+          description: This is a description
+          required: false
+          example: 10
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Normal operation
+          content:
+            application/json:
+              example: success
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Breed'
                 $ref: '#/components/schemas/Breed'
-          
+        '500':
+          description: Server exception
+          content:
+            application/json:
+              example: unsuccessful
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Breed'
+                $ref: '#/components/schemas/Breed'
   /fact:
     get:
       summary: Returns a random fact
