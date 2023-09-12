@@ -14,9 +14,9 @@ info:
   version: 1.0.0
 servers:
   - url: https://catfact.ninja
-    description: prod
+    description: prodasdsadasdasd
 paths:
-  /breeds:
+  /breeeeeeeeeds:
     get:
       summary: Returns a list of breeds
       tags:
@@ -184,5 +184,3 @@ tags:
   - name: Facts
     description: Cat Facts
   - name: Breeds
-security:
-  - BasicAuth: []
