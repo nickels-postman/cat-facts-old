@@ -184,3 +184,5 @@ tags:
   - name: Facts
     description: Cat Facts
   - name: Breeds
+security:
+  - BasicAuth: []
