@@ -559,9 +559,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/breeds?limit=<long>",
+							"raw": "https://catfact.ninja/breeds?limit=<long>",
+							"protocol": "https",
 							"host": [
-								"{{baseUrl}}"
+								"catfact",
+								"ninja"
 							],
 							"path": [
 								"breeds"
@@ -649,7 +651,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "38c19985-f2ca-4d3b-838b-7fe5690f5637",
+				"id": "4030d2e2-e342-4f3e-851c-288a6c2f2549",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -659,7 +661,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a099deb7-e448-47a2-ad3c-fda399f890dd",
+				"id": "79417f59-c9e0-4b42-93e8-5d3993d53141",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Response time is less than 900ms\", function () {",
@@ -668,14 +670,15 @@
 					"",
 					"pm.test(\"Status code is 200\", function () {",
 					"    pm.response.to.have.status(200);",
-					"});"
+					"});",
+					""
 				]
 			}
 		}
 	],
 	"variable": [
 		{
-			"id": "76fba256-b508-4dc5-9935-fe58313db71f",
+			"id": "e18e6665-3f51-4f36-aee4-40954538774c",
 			"key": "baseUrl",
 			"value": "https://catfact.ninja",
 			"type": "string"
