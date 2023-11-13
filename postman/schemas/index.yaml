@@ -20,6 +20,7 @@ paths:
     get:
       summary: Returns a list of breeds
       tags: 
+        - rapyd
       description: Returns a list of breeds
       operationId: getBreeds
       parameters:
@@ -56,7 +57,7 @@ paths:
     get:
       summary: Returns a random fact
       tags:
-        - Facts
+    
       description: Returns a random fact
       operationId: getRandomFact
       parameters:
