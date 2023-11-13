@@ -19,8 +19,8 @@ paths:
   /breeds:
     get:
       summary: Returns a list of breeds
-      tags:
-        - Breeds
+      tags: 
+          - rapyd
       description: Returns a list of breeds
       operationId: getBreeds
       parameters:
