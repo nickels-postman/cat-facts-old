@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "8f034259-5356-41ea-af20-f19eabe42269",
+		"_postman_id": "02d35539-c853-4c74-9d9c-aae43f204aa7",
 		"name": "Cat Facts",
 		"description": "## Cat Fact API\n\n- Contact Support:\n- Name: Amanda\n- Email: [admin@admin.com](https://mailto:admin@admin.com)\n    \n\nThese cat APIs are intended to bring joy to cat lovers. _Please use responsibly._\n\n<img src=\"https://content.pstmn.io/40c0556e-7f7e-4ad2-8954-090c76588ed7/Y2F0LmdpZg==\">",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "25998796-8f034259-5356-41ea-af20-f19eabe42269"
+		"_uid": "25998796-02d35539-c853-4c74-9d9c-aae43f204aa7"
 	},
 	"item": [
 		{
@@ -13,7 +13,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "a1695724-e47c-4509-b552-f4064b914cea",
+						"id": "d4cabfb1-b97e-4369-96a8-4c3397853e27",
 						"type": "text/javascript",
 						"exec": [
 							"const schema = {",
@@ -35,7 +35,7 @@
 					}
 				}
 			],
-			"id": "5ed572bf-363d-4499-aa37-b2a3ef520343",
+			"id": "500ebbff-162a-45ae-8580-b889712a98e5",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -137,7 +137,7 @@
 			},
 			"response": [
 				{
-					"id": "5e09cf83-a3b1-467c-b8f2-997a54fd3087",
+					"id": "eb3e496f-06af-4b80-8845-19b1266a6430",
 					"name": "Normal response",
 					"originalRequest": {
 						"method": "GET",
@@ -185,6 +185,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -195,7 +196,7 @@
 					"body": "{\n  \"fact\": \"A cat's normal pulse is 140-240 beats per minute, with an average of 195.\",\n  \"length\": 73\n}"
 				},
 				{
-					"id": "a32be94e-38c8-4ce5-8fc8-94dfde4b3117",
+					"id": "56a26cd3-c836-4e44-a660-40adc12c4ab1",
 					"name": "Fact not found",
 					"originalRequest": {
 						"method": "GET",
@@ -241,6 +242,7 @@
 					"status": "Not Found",
 					"code": 404,
 					"_postman_previewlanguage": "text",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -251,7 +253,7 @@
 					"body": ""
 				},
 				{
-					"id": "f1339c7b-6951-456c-93a2-a3bb3b7d476a",
+					"id": "cd77fa40-0453-4d38-952f-b7d4728e9b21",
 					"name": "Normal response",
 					"originalRequest": {
 						"method": "GET",
@@ -297,6 +299,7 @@
 					"status": "Internal Server Error",
 					"code": 500,
 					"_postman_previewlanguage": "Text",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -314,7 +317,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "ced6a578-cf5b-4763-aaa3-f31d15ced288",
+						"id": "742961f0-0915-47cb-8e87-8ed30c9616c6",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -322,7 +325,7 @@
 					}
 				}
 			],
-			"id": "0929583a-7444-4113-a676-ce8d4d373540",
+			"id": "b69c5bf5-cdb3-4e70-9738-254b67a84e3c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -407,7 +410,7 @@
 			},
 			"response": [
 				{
-					"id": "e44825ad-0649-4284-b39f-cce12cbaf870",
+					"id": "634b6c85-9217-4d09-b7f3-1c6d62373167",
 					"name": "successful operation",
 					"originalRequest": {
 						"method": "GET",
@@ -451,6 +454,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "Text",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -461,7 +465,7 @@
 					"body": "{\n  \"fact\": \"<string>\",\n  \"length\": \"<integer>\"\n}"
 				},
 				{
-					"id": "ab263265-21c3-4b0f-bc54-1bd97df57b2a",
+					"id": "e9f913d7-b9b9-409a-a6cb-b1ed9437bfdb",
 					"name": "successful operation",
 					"originalRequest": {
 						"method": "GET",
@@ -503,6 +507,7 @@
 					"status": "Internal Server Error",
 					"code": 500,
 					"_postman_previewlanguage": "Text",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -516,7 +521,7 @@
 		},
 		{
 			"name": "Returns a list of breeds",
-			"id": "47e281f7-1bbc-4891-be90-f0d771acf80c",
+			"id": "40bd9c41-cd15-4636-999d-1b4ad4d54fe2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -548,7 +553,7 @@
 			},
 			"response": [
 				{
-					"id": "72cdd11a-3d17-4228-87b9-7a1b16d89fa6",
+					"id": "462473b9-c9b1-42bb-b60f-90e3a48a776f",
 					"name": "Normal operation",
 					"originalRequest": {
 						"method": "GET",
@@ -580,6 +585,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "Text",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -590,7 +596,7 @@
 					"body": "{\n  \"breed\": \"exercitation elit dolore\",\n  \"country\": \"ea ad eu\",\n  \"origin\": \"velit\",\n  \"coat\": \"ut velit nisi cupidatat\",\n  \"pattern\": \"cillum in\"\n}"
 				},
 				{
-					"id": "fb6961fb-ef36-46db-94ee-abb50f13a3e6",
+					"id": "a20a7e42-a046-4fa7-8ba0-76b15f239fd2",
 					"name": "Server exception",
 					"originalRequest": {
 						"method": "GET",
@@ -620,6 +626,7 @@
 					"status": "Internal Server Error",
 					"code": 500,
 					"_postman_previewlanguage": "Text",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -651,7 +658,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "4030d2e2-e342-4f3e-851c-288a6c2f2549",
+				"id": "38294c7c-aadc-4554-a76f-5de3379e40ab",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -661,7 +668,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "79417f59-c9e0-4b42-93e8-5d3993d53141",
+				"id": "35f7cc86-4793-404e-9e10-5a44c9e30206",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Response time is less than 900ms\", function () {",
