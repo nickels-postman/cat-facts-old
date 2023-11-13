@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "02d35539-c853-4c74-9d9c-aae43f204aa7",
+		"_postman_id": "5a30c987-b70e-4c40-8b12-ee3f2d2701d4",
 		"name": "Cat Facts",
 		"description": "## Cat Fact API\n\n- Contact Support:\n- Name: Amanda\n- Email: [admin@admin.com](https://mailto:admin@admin.com)\n    \n\nThese cat APIs are intended to bring joy to cat lovers. _Please use responsibly._\n\n<img src=\"https://content.pstmn.io/40c0556e-7f7e-4ad2-8954-090c76588ed7/Y2F0LmdpZg==\">",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "25998796-02d35539-c853-4c74-9d9c-aae43f204aa7"
+		"_uid": "25998796-5a30c987-b70e-4c40-8b12-ee3f2d2701d4"
 	},
 	"item": [
 		{
@@ -13,7 +13,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d4cabfb1-b97e-4369-96a8-4c3397853e27",
+						"id": "c344768a-989b-4920-85a6-c46777b1b5af",
 						"type": "text/javascript",
 						"exec": [
 							"const schema = {",
@@ -35,7 +35,7 @@
 					}
 				}
 			],
-			"id": "500ebbff-162a-45ae-8580-b889712a98e5",
+			"id": "557bf9a2-2914-4773-b192-d1ee67ce1ed1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -137,7 +137,7 @@
 			},
 			"response": [
 				{
-					"id": "eb3e496f-06af-4b80-8845-19b1266a6430",
+					"id": "05d49a71-ed5a-4cf7-9751-11e39c94639c",
 					"name": "Normal response",
 					"originalRequest": {
 						"method": "GET",
@@ -196,7 +196,7 @@
 					"body": "{\n  \"fact\": \"A cat's normal pulse is 140-240 beats per minute, with an average of 195.\",\n  \"length\": 73\n}"
 				},
 				{
-					"id": "56a26cd3-c836-4e44-a660-40adc12c4ab1",
+					"id": "8bfd0c0a-23dc-417a-920d-bace85eba41a",
 					"name": "Fact not found",
 					"originalRequest": {
 						"method": "GET",
@@ -253,7 +253,7 @@
 					"body": ""
 				},
 				{
-					"id": "cd77fa40-0453-4d38-952f-b7d4728e9b21",
+					"id": "2ccdc230-3723-4464-bf0b-cf317a21b5b0",
 					"name": "Normal response",
 					"originalRequest": {
 						"method": "GET",
@@ -317,7 +317,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "742961f0-0915-47cb-8e87-8ed30c9616c6",
+						"id": "872a002e-2c2b-43b5-864b-c1f03d9d2403",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -325,7 +325,7 @@
 					}
 				}
 			],
-			"id": "b69c5bf5-cdb3-4e70-9738-254b67a84e3c",
+			"id": "3c2e0e56-10b5-49ed-921c-9787609e6130",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -410,7 +410,7 @@
 			},
 			"response": [
 				{
-					"id": "634b6c85-9217-4d09-b7f3-1c6d62373167",
+					"id": "9137e788-6078-4e32-843f-353aa3c0e167",
 					"name": "successful operation",
 					"originalRequest": {
 						"method": "GET",
@@ -465,7 +465,7 @@
 					"body": "{\n  \"fact\": \"<string>\",\n  \"length\": \"<integer>\"\n}"
 				},
 				{
-					"id": "e9f913d7-b9b9-409a-a6cb-b1ed9437bfdb",
+					"id": "31c9094e-76ba-4b32-8a68-89449cd3824e",
 					"name": "successful operation",
 					"originalRequest": {
 						"method": "GET",
@@ -521,7 +521,7 @@
 		},
 		{
 			"name": "Returns a list of breeds",
-			"id": "40bd9c41-cd15-4636-999d-1b4ad4d54fe2",
+			"id": "14c7b794-19bb-4e97-a1ae-5232c361e500",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -553,7 +553,7 @@
 			},
 			"response": [
 				{
-					"id": "462473b9-c9b1-42bb-b60f-90e3a48a776f",
+					"id": "12913c73-f185-4de1-aaf9-715bdec41039",
 					"name": "Normal operation",
 					"originalRequest": {
 						"method": "GET",
@@ -596,7 +596,7 @@
 					"body": "{\n  \"breed\": \"exercitation elit dolore\",\n  \"country\": \"ea ad eu\",\n  \"origin\": \"velit\",\n  \"coat\": \"ut velit nisi cupidatat\",\n  \"pattern\": \"cillum in\"\n}"
 				},
 				{
-					"id": "a20a7e42-a046-4fa7-8ba0-76b15f239fd2",
+					"id": "1fad58f4-4e9d-4448-a89b-676ecea35090",
 					"name": "Server exception",
 					"originalRequest": {
 						"method": "GET",
@@ -658,7 +658,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "38294c7c-aadc-4554-a76f-5de3379e40ab",
+				"id": "8ea6179b-1a8b-4f03-99b5-2a7675baa9d7",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -668,7 +668,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "35f7cc86-4793-404e-9e10-5a44c9e30206",
+				"id": "b1f3b7d6-ff6b-48d7-bba7-6cd916f5d8a4",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Response time is less than 900ms\", function () {",

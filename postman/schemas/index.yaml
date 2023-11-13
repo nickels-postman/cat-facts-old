@@ -20,7 +20,7 @@ paths:
     get:
       summary: Returns a list of breeds
       tags: 
-          - test
+          - rapyd
       description: Returns a list of breeds
       operationId: getBreeds
       parameters:
@@ -184,6 +184,6 @@ tags:
   - name: Facts
     description: Cat Facts
   - name: Breeds
-  - name: test
+  - name: rapyd
 security:
   - BasicAuth: []
