@@ -57,7 +57,7 @@ paths:
     get:
       summary: Returns a random fact
       tags:
-    
+        - facts
       description: Returns a random fact
       operationId: getRandomFact
       parameters:
