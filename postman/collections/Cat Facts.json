@@ -516,7 +516,7 @@
 		},
 		{
 			"name": "Returns a list of breeds",
-			"id": "f4abd333-a8ac-40ae-ade4-1ef8fd3d915d",
+			"id": "bb4a4500-74bd-4085-bbd8-4fa7ea9a87c8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -529,12 +529,12 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/breeeeeeeeeeeeeeeeeds?limit=<long>",
+					"raw": "{{baseUrl}}/breeds?limit=<long>",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
-						"breeeeeeeeeeeeeeeeeds"
+						"breeds"
 					],
 					"query": [
 						{
@@ -548,7 +548,7 @@
 			},
 			"response": [
 				{
-					"id": "6ad31793-f18c-419a-a717-1e8dea0ca6f0",
+					"id": "3a53c2b2-79f0-4958-9eb7-820a9d736f9f",
 					"name": "Normal operation",
 					"originalRequest": {
 						"method": "GET",
@@ -564,12 +564,12 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/breeeeeeeeeeeeeeeeeds?limit=<long>",
+							"raw": "{{baseUrl}}/breeds?limit=<long>",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
-								"breeeeeeeeeeeeeeeeeds"
+								"breeds"
 							],
 							"query": [
 								{
@@ -593,7 +593,7 @@
 					"body": "{\n  \"breed\": \"<string>\",\n  \"country\": \"<string>\",\n  \"origin\": \"<string>\",\n  \"coat\": \"<string>\",\n  \"pattern\": \"<string>\"\n}"
 				},
 				{
-					"id": "0a629c0e-def4-469c-8d51-99a772dbbbdc",
+					"id": "eb2a5497-7626-4b86-8a2e-f27530b3a633",
 					"name": "Server exception",
 					"originalRequest": {
 						"method": "GET",
@@ -609,12 +609,12 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/breeeeeeeeeeeeeeeeeds?limit=<long>",
+							"raw": "{{baseUrl}}/breeds?limit=<long>",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
-								"breeeeeeeeeeeeeeeeeds"
+								"breeds"
 							],
 							"query": [
 								{
