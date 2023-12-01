@@ -20,7 +20,7 @@ paths:
     get:
       summary: Returns a list of breeds
       tags: 
-        - rapyd
+        - breeds
       description: Returns a list of breeds
       operationId: getBreeds
       parameters:
