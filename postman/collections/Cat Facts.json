@@ -185,7 +185,6 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -242,7 +241,6 @@
 					"status": "Not Found",
 					"code": 404,
 					"_postman_previewlanguage": "text",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -299,7 +297,6 @@
 					"status": "Internal Server Error",
 					"code": 500,
 					"_postman_previewlanguage": "Text",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -454,7 +451,6 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "Text",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -507,7 +503,6 @@
 					"status": "Internal Server Error",
 					"code": 500,
 					"_postman_previewlanguage": "Text",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -521,7 +516,7 @@
 		},
 		{
 			"name": "Returns a list of breeds",
-			"id": "14c7b794-19bb-4e97-a1ae-5232c361e500",
+			"id": "f4abd333-a8ac-40ae-ade4-1ef8fd3d915d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -534,12 +529,12 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/breeds?limit=<long>",
+					"raw": "{{baseUrl}}/breeeeeeeeeeeeeeeeeds?limit=<long>",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
-						"breeds"
+						"breeeeeeeeeeeeeeeeeds"
 					],
 					"query": [
 						{
@@ -553,7 +548,7 @@
 			},
 			"response": [
 				{
-					"id": "12913c73-f185-4de1-aaf9-715bdec41039",
+					"id": "6ad31793-f18c-419a-a717-1e8dea0ca6f0",
 					"name": "Normal operation",
 					"originalRequest": {
 						"method": "GET",
@@ -561,17 +556,20 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
 							}
 						],
 						"url": {
-							"raw": "https://catfact.ninja/breeds?limit=<long>",
-							"protocol": "https",
+							"raw": "{{baseUrl}}/breeeeeeeeeeeeeeeeeds?limit=<long>",
 							"host": [
-								"catfact",
-								"ninja"
+								"{{baseUrl}}"
 							],
 							"path": [
-								"breeds"
+								"breeeeeeeeeeeeeeeeeds"
 							],
 							"query": [
 								{
@@ -585,7 +583,6 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "Text",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -593,10 +590,10 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n  \"breed\": \"exercitation elit dolore\",\n  \"country\": \"ea ad eu\",\n  \"origin\": \"velit\",\n  \"coat\": \"ut velit nisi cupidatat\",\n  \"pattern\": \"cillum in\"\n}"
+					"body": "{\n  \"breed\": \"<string>\",\n  \"country\": \"<string>\",\n  \"origin\": \"<string>\",\n  \"coat\": \"<string>\",\n  \"pattern\": \"<string>\"\n}"
 				},
 				{
-					"id": "1fad58f4-4e9d-4448-a89b-676ecea35090",
+					"id": "0a629c0e-def4-469c-8d51-99a772dbbbdc",
 					"name": "Server exception",
 					"originalRequest": {
 						"method": "GET",
@@ -604,15 +601,20 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/breeds?limit=<long>",
+							"raw": "{{baseUrl}}/breeeeeeeeeeeeeeeeeds?limit=<long>",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
-								"breeds"
+								"breeeeeeeeeeeeeeeeeds"
 							],
 							"query": [
 								{
@@ -626,7 +628,6 @@
 					"status": "Internal Server Error",
 					"code": 500,
 					"_postman_previewlanguage": "Text",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -634,7 +635,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n  \"breed\": \"exercitation elit dolore\",\n  \"country\": \"ea ad eu\",\n  \"origin\": \"velit\",\n  \"coat\": \"ut velit nisi cupidatat\",\n  \"pattern\": \"cillum in\"\n}"
+					"body": "{\n  \"breed\": \"<string>\",\n  \"country\": \"<string>\",\n  \"origin\": \"<string>\",\n  \"coat\": \"<string>\",\n  \"pattern\": \"<string>\"\n}"
 				}
 			]
 		}
