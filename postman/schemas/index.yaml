@@ -184,6 +184,5 @@ tags:
   - name: Facts
     description: Cat Facts
   - name: Breeds
-  - name: rapyd
 security:
   - BasicAuth: []
