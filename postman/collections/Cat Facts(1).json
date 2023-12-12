@@ -491,9 +491,38 @@
 			}
 		]
 	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "804aaa4f-7426-492e-8e50-8b4e527495c4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0491cc93-dced-4661-b23d-c8d66bdd1b17",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Response time is less than 900ms\", function () {",
+					"    pm.expect(pm.response.responseTime).to.be.below(900);",
+					"});",
+					"",
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});",
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
-			"id": "1e5a55ec-c9c8-4eaa-a824-2c39b16f1628",
+			"id": "0a573867-6a46-47ab-8d05-f1fd7ade190f",
 			"key": "baseUrl",
 			"value": "https://catfact.ninja",
 			"type": "any"
