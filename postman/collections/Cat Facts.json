@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "5a30c987-b70e-4c40-8b12-ee3f2d2701d4",
+		"_postman_id": "e68cc1fe-7acc-4428-86c4-02221d103de2",
 		"name": "Cat Facts",
 		"description": "## Cat Fact API\n\n- Contact Support:\n- Name: Amanda\n- Email: [admin@admin.com](https://mailto:admin@admin.com)\n    \n\nThese cat APIs are intended to bring joy to cat lovers. _Please use responsibly._\n\n<img src=\"https://content.pstmn.io/40c0556e-7f7e-4ad2-8954-090c76588ed7/Y2F0LmdpZg==\">",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "25998796-5a30c987-b70e-4c40-8b12-ee3f2d2701d4"
+		"_uid": "25998796-e68cc1fe-7acc-4428-86c4-02221d103de2"
 	},
 	"item": [
 		{
@@ -13,8 +13,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "c344768a-989b-4920-85a6-c46777b1b5af",
-						"type": "text/javascript",
+						"id": "36199b95-b86d-40b1-9168-e028bb3d0845",
 						"exec": [
 							"const schema = {",
 							"    \"properties\": {",
@@ -31,11 +30,12 @@
 							"    pm.response.to.have.jsonSchema(schema);",
 							"});",
 							""
-						]
+						],
+						"type": "text/javascript"
 					}
 				}
 			],
-			"id": "557bf9a2-2914-4773-b192-d1ee67ce1ed1",
+			"id": "1e94b1a8-4c87-4cfa-8adb-a39efd756ae1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -48,7 +48,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/fact?max_length=10",
+					"raw": "{{baseUrl}}/fact?max_length=100",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -122,14 +122,13 @@
 							"disabled": true
 						},
 						{
-							"description": "maximum length of returned fact",
-							"key": "max_length",
-							"value": "10"
-						},
-						{
 							"key": "",
 							"value": "null",
 							"disabled": true
+						},
+						{
+							"key": "max_length",
+							"value": "100"
 						}
 					]
 				},
@@ -137,7 +136,7 @@
 			},
 			"response": [
 				{
-					"id": "05d49a71-ed5a-4cf7-9751-11e39c94639c",
+					"id": "8f883324-d77f-467f-a088-a0367e5e893a",
 					"name": "Normal response",
 					"originalRequest": {
 						"method": "GET",
@@ -195,7 +194,7 @@
 					"body": "{\n  \"fact\": \"A cat's normal pulse is 140-240 beats per minute, with an average of 195.\",\n  \"length\": 73\n}"
 				},
 				{
-					"id": "8bfd0c0a-23dc-417a-920d-bace85eba41a",
+					"id": "77b3697d-42a0-49a1-bcb9-b2329e13a4f3",
 					"name": "Fact not found",
 					"originalRequest": {
 						"method": "GET",
@@ -251,7 +250,7 @@
 					"body": ""
 				},
 				{
-					"id": "2ccdc230-3723-4464-bf0b-cf317a21b5b0",
+					"id": "c6ecce83-e68c-49a4-9993-752a3468a56f",
 					"name": "Normal response",
 					"originalRequest": {
 						"method": "GET",
@@ -314,7 +313,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "872a002e-2c2b-43b5-864b-c1f03d9d2403",
+						"id": "fcc27070-4822-4ee1-9c8b-d0c89ec16cd5",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -322,7 +321,7 @@
 					}
 				}
 			],
-			"id": "3c2e0e56-10b5-49ed-921c-9787609e6130",
+			"id": "f6ba9004-9455-44ef-93c2-58227786abe4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -407,7 +406,7 @@
 			},
 			"response": [
 				{
-					"id": "9137e788-6078-4e32-843f-353aa3c0e167",
+					"id": "303735c9-0037-49ee-9f1c-93b8b4841c6e",
 					"name": "successful operation",
 					"originalRequest": {
 						"method": "GET",
@@ -461,7 +460,7 @@
 					"body": "{\n  \"fact\": \"<string>\",\n  \"length\": \"<integer>\"\n}"
 				},
 				{
-					"id": "31c9094e-76ba-4b32-8a68-89449cd3824e",
+					"id": "3f77ff0e-8617-4bbb-a23c-9dad58067125",
 					"name": "successful operation",
 					"originalRequest": {
 						"method": "GET",
@@ -516,7 +515,7 @@
 		},
 		{
 			"name": "Returns a list of breeds",
-			"id": "bb4a4500-74bd-4085-bbd8-4fa7ea9a87c8",
+			"id": "ddd0aeef-7dfe-45fd-8ab9-4f76413596ce",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -548,7 +547,7 @@
 			},
 			"response": [
 				{
-					"id": "3a53c2b2-79f0-4958-9eb7-820a9d736f9f",
+					"id": "bdeecefe-1646-4334-9c28-70ac127c780f",
 					"name": "Normal operation",
 					"originalRequest": {
 						"method": "GET",
@@ -593,7 +592,7 @@
 					"body": "{\n  \"breed\": \"<string>\",\n  \"country\": \"<string>\",\n  \"origin\": \"<string>\",\n  \"coat\": \"<string>\",\n  \"pattern\": \"<string>\"\n}"
 				},
 				{
-					"id": "eb2a5497-7626-4b86-8a2e-f27530b3a633",
+					"id": "7da8ce20-9230-4c72-88cd-2c316ad7d235",
 					"name": "Server exception",
 					"originalRequest": {
 						"method": "GET",
@@ -659,7 +658,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "8ea6179b-1a8b-4f03-99b5-2a7675baa9d7",
+				"id": "4b832a8b-4d15-433d-b7b1-003ea4cf0726",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -669,7 +668,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b1f3b7d6-ff6b-48d7-bba7-6cd916f5d8a4",
+				"id": "49886ce3-a919-4c7d-a7c5-097de1525617",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Response time is less than 900ms\", function () {",

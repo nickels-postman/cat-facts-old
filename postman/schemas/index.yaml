@@ -2,7 +2,7 @@ openapi: 3.0.0
 x-apiname: catFacts
 x-responsetime: 10000
 info:
-  title: Cat Facts 
+  title: Cat Facts API
   contact:
     email: admin@admin.com
     url: https://catfact.ninja
@@ -69,7 +69,7 @@ paths:
           schema:
             type: integer
             format: int64
-            default: 10
+            default: 100
       responses:
         '200':
           description: Normal response
